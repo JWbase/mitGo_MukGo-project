@@ -1,8 +1,5 @@
 package kr.co.mitgomukgo.store.model.dao;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -31,11 +28,6 @@ public class StoreDao {
 
 	public int insertImg(StoreImg si) {
 		return sqlSession.insert("insertImg", si);
-	}
-
-	public ArrayList<Store> storeAllList() {
-		List list = sqlSession.selectList("store.storeAllList");
-		return (ArrayList<Store>)list;
 	}
 
 }

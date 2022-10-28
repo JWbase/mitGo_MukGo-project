@@ -34,7 +34,9 @@
 							<option value="4">중식</option>
 							<option value="5">분식</option>
 							<option value="6">육류</option>
-							<option value="7">기타</option>
+							<option value="7">씨푸드</option>
+							<option value="8">디저트</option>
+							<option value="9">기타</option>
 						</select>
 						<select class="form-control" id="withEatCate" name="withEatCate" style="border: 0; border-bottom: 1px solid gainsboro;" required oninvalid="this.setCustomValidity('카테고리를 선택하세요')" oninput="this.setCustomValidity('')">
 							<option value="" hidden="" disabled="disabled" selected="selected">업체 특성을 선택해주세요</option>
