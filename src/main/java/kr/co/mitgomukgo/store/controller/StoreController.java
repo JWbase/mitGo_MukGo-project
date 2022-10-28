@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.multipart.MultipartFile;
 import common.FileRename;
@@ -76,7 +77,11 @@ public class StoreController {
 	}
 	
 	@RequestMapping(value = "/storeList.do")
-	public String storeListFrm() {
+	public String storeListFrm(Model model) {
+		ArrayList<Store> list = service.storeAllList();
+		model.addAttribute("list", list);
+		
 		return "store/storeListFrm";
 	}
+	
 }

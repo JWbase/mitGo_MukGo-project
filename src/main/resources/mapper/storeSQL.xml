@@ -34,4 +34,22 @@
 	#{imgpath}
 	)
 </insert>
+<select id="storeAllList" resultType="s">
+	select
+		store_no as storeNo,
+		store_name as storeName,
+		owner_no as ownerNo,
+		address,
+		phone,
+		content,
+		open_hour as openHour,
+		closed_day as closedDay,
+		rating,
+		review_count as reviewCount,
+		category,
+		whitheat_cate as withEatCate,
+		whereeat_cate as whereEatCate
+	from store
+</select>
+
 </mapper>

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,9 +34,10 @@
 					<li><img src="/resources/img/food.png">양식</li>
 					<li><img src="/resources/img/salmon.png">일식</li>
 					<li><img src="/resources/img/dimpling.png">중식</li>
+					<li><img src="/resources/img/tteokbokki.png">분식</li>
 					<li><img src="/resources/img/chicken.png" alt="">육류</li>
 					<li><img src="/resources/img/sea-food.png">씨푸드</li>
-					<li><img src="/resources/img/tteokbokki.png">분식</li>
+					<li>디저트</li>
 					<li>기타</li>
 				</ul>
 			</div>
@@ -51,104 +53,8 @@
 		</div>
 		<div class="storeList-list">
 			<div class="storeList-list-content">
-				<div class="showList">
-					<div>
-						<img src="/resources/img/테스트.jpg">
-					</div>
-					<div>
-						<div>별점</div>
-						<div>가게이름</div>
-						<div>조회수</div>
-					</div>
-				</div>
-
-				<div class="showList">
-					<div>
-						<img src="/resources/img/테스트.jpg">
-					</div>
-					<div>
-						<div>별점</div>
-						<div>가게이름</div>
-						<div>조회수</div>
-					</div>
-				</div>
-
-				<div class="showList">
-					<div>
-						<img src="/resources/img/테스트.jpg">
-					</div>
-					<div>
-						<div>별점</div>
-						<div>가게이름</div>
-						<div>조회수</div>
-					</div>
-				</div>
-
-				<div class="showList">
-					<div>
-						<img src="/resources/img/테스트.jpg">
-					</div>
-					<div>
-						<div>별점</div>
-						<div>가게이름</div>
-						<div>조회수</div>
-					</div>
-				</div>
-
-				<div class="showList">
-					<div>
-						<img src="/resources/img/테스트.jpg">
-					</div>
-					<div>
-						<div>별점</div>
-						<div>가게이름</div>
-						<div>조회수</div>
-					</div>
-				</div>
-
-				<div class="showList">
-					<div>
-						<img src="/resources/img/테스트.jpg">
-					</div>
-					<div>
-						<div>별점</div>
-						<div>가게이름</div>
-						<div>조회수</div>
-					</div>
-				</div>
-
-				<div class="showList">
-					<div>
-						<img src="/resources/img/테스트.jpg">
-					</div>
-					<div>
-						<div>별점</div>
-						<div>가게이름</div>
-						<div>조회수</div>
-					</div>
-				</div>
-
-				<div class="showList">
-					<div>
-						<img src="/resources/img/테스트.jpg">
-					</div>
-					<div>
-						<div>별점</div>
-						<div>가게이름</div>
-						<div>조회수</div>
-					</div>
-				</div>
-
-				<div class="showList">
-					<div>
-						<img src="/resources/img/테스트.jpg">
-					</div>
-					<div>
-						<div>별점</div>
-						<div>가게이름</div>
-						<div>조회수</div>
-					</div>
-				</div>
+				<c:forEach items="${list }" var="">
+					
 			</div>
 		</div>
 	</div>
