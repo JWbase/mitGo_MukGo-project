@@ -213,26 +213,18 @@ textarea {
   line-height: 2;
 }
 
-.btn:hover,
-.fc button:hover,
-.ajax-upload-dragdrop .ajax-file-upload:hover {
+.btn:hover{
   color: #ffffff;
   text-decoration: none;
 }
 
 .btn:focus,
-.fc button:focus,
-.ajax-upload-dragdrop .ajax-file-upload:focus,
-.btn.focus,
-.fc button.focus,
-.ajax-upload-dragdrop .focus.ajax-file-upload {
+.btn.focus{
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-.btn:not(:disabled):not(.disabled),
-.fc button:not(:disabled):not(.disabled),
-.ajax-upload-dragdrop .ajax-file-upload:not(:disabled):not(.disabled) {
+.btn:not(:disabled):not(.disabled){
   cursor: pointer;
 }
 
@@ -326,7 +318,6 @@ textarea {
 .submitBtn>button:hover {
   background-color: #fff;
   color: rgb(51, 51, 51);
-
 }
 
 .submitBtn>.cancle {
