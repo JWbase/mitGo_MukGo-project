@@ -209,20 +209,20 @@
 	float: left;
 }
 
-.showList>div:first-child {
+.showList>a>div:first-child {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.showList>div:nth-child(2) {
+.showList>a>div:nth-child(2) {
 	width: 200px;
 	margin-left : 50px;
 	margin-top : 10px;
 	margin-bottom : 30px;
 }
 
-.showList>div>img {
+.showList>a>div>img {
 	width: 200px;
 	height: 200px;
 }

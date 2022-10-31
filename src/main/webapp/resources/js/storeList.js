@@ -9,8 +9,8 @@ tag.on("click",function(){
             $(tag).eq(i).css("color","black");
         }
     }
-    console.log(index);
-    $(tag).eq(index).css("color","#568A35");
+    
+    $(tag).eq(index).css("color","#FFAE6D");
 });
 
 const sort = $(".storeList-sort-content>ul>li");
@@ -21,7 +21,7 @@ sort.on("click",function(){
             $(sort).eq(i).css("color","black");
         }
     }
-    $(sort).eq(sortindex).css("color","#568A35");
+    $(sort).eq(sortindex).css("color","#FFAE6D");
 });
 
 const locationTag = $(".storeList-map-content>div");

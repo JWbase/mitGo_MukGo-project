@@ -55,6 +55,7 @@
 			<div class="storeList-list-content">
 				<c:forEach items="${list }" var="s">
 					<div class="showList">
+					<a href="/storeDetail.do?storeNo=${s.storeNo }">
 						<div>
 							<img src="resources/upload/store/${s.thumbNail }">
 						</div>
@@ -63,6 +64,7 @@
 							<div>가게이름 : ${s.storeName }</div>
 							<div>전화번호 : ${s.phone }</div>
 						</div>
+					</a>	
 					</div>
 				</c:forEach>
 			</div>
