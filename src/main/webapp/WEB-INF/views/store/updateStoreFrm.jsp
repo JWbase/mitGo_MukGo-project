@@ -1,10 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
 </head>
 <body>
    <jsp:include page="/WEB-INF/views/common/header.jsp" />
@@ -59,7 +61,7 @@
                <div class="form-group">
                   <label for="inputAddress">주소</label>
                   <br>
-                  <input type="text" class="form-control" id="inputAddress1" name="zipCode" onclick="searchPost();" placeholder="동/리/도로명으로 검색해주세요." readonly="readonly">
+                  <input type="text" class="form-control" id="inputAddress1" name="zipCode" onclick="searchPost();" value="${s[0].address }" readonly="readonly">
                   <input type="text" class="form-control" id="inputAddress2" name="address" readonly="readonly">
                   <input type="text" class="form-control" id="detailAddress" name="detailAddress" required oninvalid="this.setCustomValidity('주소를 입력하세요')" oninput="this.setCustomValidity('')">
                   <br>
@@ -68,7 +70,11 @@
                   <label>업체 사진</label>
                   <input type="file" name="file" class="file-upload-default" id="file" multiple>
                   <div class="input-group col-xs-12">
-                     <input type="text" class="form-control file-upload-info" value="${s[0]. }" disabled>
+                  	
+                  		<c:forEach var="item" items="${s }">
+	                     <input type="text" class="form-control file-upload-info" value="${item.storeImgList}" disabled>
+                  			
+                  		</c:forEach>
                      <span class="input-group-append">
                         <button class="file-upload-browse btn btn-primary" type="button" id="storeImg">사진추가</button>
                      </span>
@@ -121,5 +127,8 @@
    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
    <script type="text/javascript" src="/resources/js/store/addStoreFrm.js"></script>
+
+
+	
 </body>
 </html>

@@ -60,7 +60,7 @@ public class StoreController {
 	@RequestMapping(value = "/addStore.do")
 	public String addStore(Store s, MultipartFile[] file, HttpServletRequest request, String zipCode,
 			String detailAddress, String closedHour) {
-
+		
 		// 첨부이미지 목록 저장할 리스트 생성
 		ArrayList<StoreImg> storeImgList = new ArrayList<StoreImg>();
 

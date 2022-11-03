@@ -36,8 +36,6 @@ $('.time').timepicker({
 function addrSlice() {
   const addr = $("#inputAddress1").val();
   const splitWord = addr.split("*");
-  for (let i = 0; i < splitWord.length; i++) {
-  }
   $("#inputAddress1").val(splitWord[0]);
   $("#inputAddress2").val(splitWord[1]);
   $("#detailAddress").val(splitWord[2]);

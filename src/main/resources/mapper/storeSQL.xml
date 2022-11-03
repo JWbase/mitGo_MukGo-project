@@ -124,17 +124,17 @@
 	
 	<select id="selectMyStore" parameterType="o" resultType="s">
 		select
-
-		store_name as storeName,
-		open_hour as openHour,
-		address,
-		phone,
-		closed_day as closedDay,
-		category,
-		witheat_cate as withEatCate,
-		whereeat_cate as whereEatCate,
-		content,
-		imgpath as storeImgList
+			a.store_no as storeNo,
+			store_name as storeName,
+			open_hour as openHour,
+			address,
+			phone,
+			closed_day as closedDay,
+			category,
+			witheat_cate as withEatCate,
+			whereeat_cate as whereEatCate,
+			content,
+			imgpath as storeImgList
 		from store a
 		left join store_img b
 		on a.store_no = b.store_no
