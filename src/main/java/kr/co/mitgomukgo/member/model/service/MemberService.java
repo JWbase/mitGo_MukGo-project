@@ -849,11 +849,11 @@ public class MemberService {
 	
 
 
-
-
 	public int cancleOrder(int orderNo) {
 		return dao.cancleOrder(orderNo);
 	}
+
+
 
 
 

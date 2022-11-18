@@ -348,7 +348,10 @@
 			if(idFlag == 0 || phoneFlag == 0 || allowChked == false) {
 				event.preventDefault();
 			}
-			
+			if(phoneFlag == 0) {
+				alert("인증번호 확인을 눌러주세요.");
+				event.preventDefault();
+			}
 			
 			
 		});

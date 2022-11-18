@@ -167,7 +167,7 @@
 				return;
 			}
 			$("[name=checkId]").val(memberId);
-			const popup = window.open("","checkId","left=700px, top=300px, width=500px, height=200px, menubar=no, status=no, scrollbars=yes");
+			const popup = window.open("","checkId","left=600px, top=300px, width=500px, height=200px, menubar=no, status=no, scrollbars=yes");
 			//새창에서 form을 전송하기 위한 연결작업
 			$("[name=checkIdFrm]").attr("target","checkId");
 			$("[name=checkIdFrm]").submit();
@@ -339,7 +339,10 @@
 			if(idFlag == 0 || phoneFlag == 0 || allowChked == false) {
 				event.preventDefault();
 			}
-			
+			if(phoneFlag == 0) {
+				alert("인증번호 확인을 눌러주세요.");
+				event.preventDefault();
+			}
 			
 		});
 		
