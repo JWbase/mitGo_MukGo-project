@@ -16,19 +16,16 @@
 
 
 ## 개발환경
-- DBMS : Oracle
+- DBMS : Oracle 11g xe
 - Server : Apache Tomcat v8.5
-- Language : java, js
-- 디자인 툴 : bootstrap, W3C
+- Language : Java, Javascript
 - API : T-MAP api, KG-이니시스 결제 api
-- Framework : SpringMVC
 
 ## 프로젝트 사용기술
-- JAVA, JSP
-- ajax
-- JQuery, JavaScript
-- myBatis, maven
-- Spring Framework
+- Java1.8, Spring FrameWork, Maven
+- Ajax
+- JQuery, Javascript
+- myBatis
 
 ## 일정
 - 2022.10.18 ~ 2022.11.18
