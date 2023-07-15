@@ -22,7 +22,7 @@
 - API : T-MAP api, KG-이니시스 결제 api
 
 ## 프로젝트 사용기술
-- Java1.8, Spring FrameWork, Maven
+- Java1.8, Spring Framework, Maven
 - Ajax
 - JQuery, Javascript
 - myBatis
